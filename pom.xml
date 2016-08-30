@@ -58,9 +58,9 @@
 	<!-- hbase -->
   	<!-- https://mvnrepository.com/artifact/org.apache.hbase/hbase-client -->
 	<dependency>
-	    <groupId>org.apache.hbase</groupId>
-	    <artifactId>hbase-client</artifactId>
-	    <version>1.2.0</version>
+		<groupId>org.apache.mahout.hadoop</groupId>
+		<artifactId>hadoop-core</artifactId>
+		<version>0.20.1</version>
 	</dependency>
   </dependencies>
   
