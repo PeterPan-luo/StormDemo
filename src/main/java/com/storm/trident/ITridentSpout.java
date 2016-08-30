@@ -24,14 +24,14 @@ public class ITridentSpout implements org.apache.storm.trident.spout.ITridentSpo
 	public org.apache.storm.trident.spout.ITridentSpout.BatchCoordinator<MyMata> getCoordinator(
 			String arg0, Map arg1, TopologyContext arg2) {
 		// TODO Auto-generated method stub
-		return null;
+		return new MyBatchCoordinator();
 	}
 
 	@Override
 	public org.apache.storm.trident.spout.ITridentSpout.Emitter<MyMata> getEmitter(
 			String arg0, Map arg1, TopologyContext arg2) {
 		// TODO Auto-generated method stub
-		return null;
+		return new MyEmitter();
 	}
 
 	@Override
