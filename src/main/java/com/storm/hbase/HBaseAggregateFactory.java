@@ -1,7 +1,5 @@
 package com.storm.hbase;
 
-import hbase.state.TridentConfig;
-
 import java.util.Map;
 
 import org.apache.storm.task.IMetricsContext;
@@ -30,7 +28,7 @@ public class HBaseAggregateFactory implements StateFactory{
 		this.type = stateType;
 		this.config = config;
 		if (config.getStateSerializer() == null) {
-			config.setStateSerializer(TridentConfig.DEFAULT_SERIALIZES.get(type));
+			config.setStateSerializer(TridentConfig.DEFAULT_SERIALIZERS.get(type));
 		}
 	}
 	

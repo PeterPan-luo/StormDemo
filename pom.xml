@@ -47,7 +47,13 @@
 				<artifactId>log4j</artifactId>
 			</exclusion>
 		</exclusions>
+	
 	</dependency>
+	<dependency>
+			<groupId>org.apache.kafka</groupId>
+			<artifactId>kafka-clients</artifactId>
+			<version>0.8.2.2</version>
+		</dependency>
 	<!-- log jar -->
 	<dependency>
 		<groupId>org.slf4j</groupId>
