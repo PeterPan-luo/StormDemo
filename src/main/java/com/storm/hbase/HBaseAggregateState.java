@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.hadoop.hbase.client.Get;
+import org.apache.hadoop.hbase.client.Put;
 import org.apache.storm.trident.state.OpaqueValue;
 import org.apache.storm.trident.state.Serializer;
 import org.apache.storm.trident.state.StateFactory;

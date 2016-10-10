@@ -6,7 +6,15 @@
   
   <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<hbase.version>0.98.6-cdh5.3.3</hbase.version>
 	</properties>
+  
+  <repositories>
+    <repository>
+      <id>cloudera</id>
+      <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
+    </repository>
+  </repositories>
   
   <dependencies>
   		<dependency>
@@ -53,7 +61,7 @@
 			<groupId>org.apache.kafka</groupId>
 			<artifactId>kafka-clients</artifactId>
 			<version>0.8.2.2</version>
-		</dependency>
+	</dependency>
 	<!-- log jar -->
 	<dependency>
 		<groupId>org.slf4j</groupId>
@@ -67,6 +75,19 @@
 		<groupId>org.apache.mahout.hadoop</groupId>
 		<artifactId>hadoop-core</artifactId>
 		<version>0.20.1</version>
+	</dependency>
+	
+	<!-- hbase dependency -->
+	
+	<dependency>
+	  <groupId>org.apache.hbase</groupId> 
+	  <artifactId>hbase-client</artifactId> 
+	  <version>${hbase.version}</version> 
+	</dependency>
+	<dependency>
+	  <groupId>org.apache.hbase</groupId> 
+	  <artifactId>hbase-server</artifactId> 
+	  <version>${hbase.version}</version> 
 	</dependency>
   </dependencies>
   
